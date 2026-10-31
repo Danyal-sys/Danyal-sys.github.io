@@ -10,27 +10,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Danyal Asghar — Senior Game Engineer</title>
 <meta name="description" content="Playable portfolio of Danyal Asghar, Senior Game Engineer. Insert a cartridge to play microgames of shipped titles: Life in Willowdale, WrestleQuest, Goons, Across the Obelisk.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danyal-sys.github.io/">
+<meta property="og:title" content="Danyal Asghar — Senior Game Engineer">
+<meta property="og:description" content="A portfolio you can play: five microgames based on the games I've worked on — four shipped on PC, PlayStation, Xbox and Switch, and one I'm making now.">
+<meta property="og:image" content="https://danyal-sys.github.io/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Danyal Asghar's playable portfolio: a retro console with a shelf of game cartridges">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Danyal Asghar — Senior Game Engineer">
+<meta name="twitter:description" content="A portfolio you can play: five microgames based on the games I've worked on.">
+<meta name="twitter:image" content="https://danyal-sys.github.io/preview.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' rx='3' fill='%230d0d0d'/%3E%3Cg fill='%2379c99a'%3E%3Crect x='10' y='3' width='3' height='1'/%3E%3Crect x='8' y='4' width='6' height='1'/%3E%3Crect x='7' y='5' width='7' height='1'/%3E%3Crect x='6' y='6' width='7' height='1'/%3E%3Crect x='5' y='7' width='8' height='1'/%3E%3Crect x='5' y='8' width='7' height='1'/%3E%3Crect x='5' y='9' width='6' height='1'/%3E%3Crect x='5' y='10' width='5' height='1'/%3E%3Crect x='6' y='11' width='2' height='1'/%3E%3C/g%3E%3Cg fill='%233f7d57'%3E%3Crect x='11' y='5' width='1' height='1'/%3E%3Crect x='10' y='6' width='1' height='1'/%3E%3Crect x='9' y='7' width='1' height='1'/%3E%3Crect x='8' y='8' width='1' height='1'/%3E%3Crect x='7' y='9' width='1' height='1'/%3E%3C/g%3E%3Cg fill='%23b8b8b8'%3E%3Crect x='5' y='11' width='1' height='1'/%3E%3Crect x='4' y='12' width='1' height='1'/%3E%3Crect x='3' y='13' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Danyal Asghar",
+  "jobTitle": "Senior Game Engineer",
+  "url": "https://danyal-sys.github.io/",
+  "email": "mailto:asghardaniel@gmail.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/danyal-asghar-a6789a8b",
+    "https://github.com/Danyal-sys"
+  ],
+  "worksFor": { "@type": "Organization", "name": "FRAG Games" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Beaconhouse National University" },
+  "knowsAbout": ["Unity", "C#", "C++", "Gameplay programming", "Console development", "PlayStation", "Xbox", "Nintendo Switch", "Performance optimization", "Multiplayer (Photon / Quantum)", "Game AI and pathfinding"],
+  "description": "Senior Game Engineer with 10+ years of experience shipping games on PC, PlayStation, Xbox and Nintendo Switch, including Life in Willowdale: Farm Adventures, WrestleQuest, Goons: Legends & Mayhem and Across the Obelisk."
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0e0c16; --panel:#1c1828; --edge:#2e2842; --ink:#efe6d0; --dim:#9c92b8;
-    --gold:#ffcf5c; --red:#e05252; --green:#5cb85c; --blue:#5a8de0; --purple:#a06ae0;
+    --bg:#0a0a0a; --panel:#181818; --edge:#3a3a3a; --ink:#d8d8d8; --dim:#8a8a8a;
+    --gold:#79c99a; --red:#e05252; --green:#5cb85c; --blue:#5a8de0; --purple:#a06ae0;
   }
   *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
   html{background:var(--bg);}
   body{min-height:100vh;color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif;
-    background:radial-gradient(ellipse at 50% -10%, #201a33 0%, var(--bg) 60%);}
+    background:radial-gradient(ellipse at 50% -10%, #1c1c1c 0%, var(--bg) 60%);}
   .px{font-family:'Press Start 2P',monospace;}
 
   #boot{position:fixed;inset:0;background:#000;z-index:50;display:flex;flex-direction:column;
     align-items:center;justify-content:center;gap:26px;cursor:pointer;text-align:center;padding:16px;}
   #boot .blogo{font-family:'Press Start 2P',monospace;color:var(--gold);font-size:clamp(20px,5vw,40px);
-    text-shadow:0 0 18px rgba(255,207,92,.6), 3px 3px 0 #6e3c17;opacity:0;animation:bootin 1.4s ease forwards;}
+    text-shadow:0 0 18px rgba(255,255,255,.3), 3px 3px 0 #000;opacity:0;animation:bootin 1.4s ease forwards;}
   #boot .bsub{font-family:'Press Start 2P',monospace;color:var(--dim);font-size:clamp(8px,1.6vw,11px);
     line-height:2;opacity:0;animation:bootin 1.2s ease .9s forwards;}
-  #boot .bskip{font-family:'Press Start 2P',monospace;color:#554d70;font-size:8px;position:absolute;bottom:22px;
+  #boot .bskip{font-family:'Press Start 2P',monospace;color:#555;font-size:8px;position:absolute;bottom:22px;
     animation:blink 1.2s steps(2) infinite;}
   @keyframes bootin{from{opacity:0;transform:scale(.85);}to{opacity:1;transform:scale(1);}}
   @keyframes blink{50%{opacity:.15;}}
@@ -38,47 +70,47 @@
   #room{max-width:920px;margin:0 auto;padding:22px 14px 60px;}
   header{text-align:center;margin-bottom:18px;}
   header h1{font-family:'Press Start 2P',monospace;font-size:clamp(14px,3.4vw,24px);color:var(--gold);
-    text-shadow:2px 2px 0 #6e3c17;line-height:1.6;}
+    text-shadow:2px 2px 0 #000;line-height:1.6;}
   header p{font-family:'Press Start 2P',monospace;font-size:clamp(7px,1.5vw,10px);color:var(--dim);
     margin-top:10px;line-height:2;}
 
-  #tvwrap{position:relative;margin:0 auto;max-width:720px;background:#241f35;border-radius:18px;
+  #tvwrap{position:relative;margin:0 auto;max-width:720px;background:#151515;border-radius:18px;
     padding:16px 16px 30px;border:2px solid var(--edge);box-shadow:0 14px 40px rgba(0,0,0,.55);}
   #tvinner{position:relative;background:#000;border-radius:8px;overflow:hidden;aspect-ratio:16/9;}
   canvas#screen{width:100%;height:100%;display:block;image-rendering:pixelated;image-rendering:crisp-edges;}
   #scan{position:absolute;inset:0;pointer-events:none;border-radius:8px;
     background:repeating-linear-gradient(0deg, rgba(0,0,0,.16) 0 1px, transparent 1px 3px);}
   #glow{position:absolute;inset:0;pointer-events:none;border-radius:8px;
-    box-shadow:inset 0 0 60px rgba(90,60,160,.25);}
-  #tvoverlay{position:absolute;inset:0;display:none;overflow-y:auto;padding:14px 16px;background:rgba(4,2,10,.96);}
-  #led{position:absolute;bottom:9px;right:24px;width:10px;height:10px;border-radius:50%;background:#3adb76;
-    box-shadow:0 0 8px #3adb76;}
-  #brand{position:absolute;bottom:5px;left:24px;font-family:'Press Start 2P',monospace;font-size:8px;color:#554d70;}
+    box-shadow:inset 0 0 60px rgba(200,200,200,.1);}
+  #tvoverlay{position:absolute;inset:0;display:none;overflow-y:auto;padding:14px 16px;background:rgba(8,8,8,.97);}
+  #led{position:absolute;bottom:9px;right:24px;width:10px;height:10px;border-radius:50%;background:#e0e0e0;
+    box-shadow:0 0 8px rgba(255,255,255,.7);}
+  #brand{position:absolute;bottom:5px;left:24px;font-family:'Press Start 2P',monospace;font-size:8px;color:#555;}
 
   #infocard{max-width:720px;margin:14px auto 0;background:var(--panel);border:2px solid var(--edge);
     border-radius:12px;padding:14px 16px;display:none;}
   #infocard .ihead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
   #infocard .ititle{font-family:'Press Start 2P',monospace;font-size:clamp(10px,2.2vw,13px);color:var(--gold);line-height:1.7;}
   .badge{font-family:'Press Start 2P',monospace;font-size:7px;padding:4px 7px;border:2px solid;line-height:1;}
-  #infocard .irole{font-family:'Press Start 2P',monospace;font-size:8px;color:#8fe3b0;margin:8px 0 4px;line-height:1.9;}
-  #infocard .ibody{font-size:14px;line-height:1.55;color:#ddd5ea;}
+  #infocard .irole{font-family:'Press Start 2P',monospace;font-size:8px;color:#bdbdbd;margin:8px 0 4px;line-height:1.9;}
+  #infocard .ibody{font-size:14px;line-height:1.55;color:#cfcfcf;}
   #infocard .ibody ul{margin:4px 0 4px 18px;}
-  #infocard .ibody a{color:#8fc7ff;}
+  #infocard .ibody a{color:#ffffff;}
 
   #shelfwrap{max-width:840px;margin:26px auto 0;}
   #shelflabel{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--dim);text-align:center;margin-bottom:12px;line-height:1.9;}
   #shelf{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;padding:16px 10px 12px;
-    background:linear-gradient(#2b2140,#221a33);border:2px solid var(--edge);border-radius:12px;}
+    background:linear-gradient(#1e1e1e,#141414);border:2px solid var(--edge);border-radius:12px;}
   .cart{width:112px;cursor:pointer;text-align:center;transition:transform .15s;position:relative;border:0;background:none;color:var(--ink);}
   .cart:hover{transform:translateY(-6px);}
-  .cart .shell{background:#3a3450;border-radius:6px 6px 3px 3px;padding:8px 7px 10px;border:2px solid #494163;position:relative;}
-  .cart .shell::before{content:"";position:absolute;top:-6px;left:24px;right:24px;height:6px;background:#494163;border-radius:4px 4px 0 0;}
+  .cart .shell{background:#3a3a3a;border-radius:6px 6px 3px 3px;padding:8px 7px 10px;border:2px solid #4c4c4c;position:relative;}
+  .cart .shell::before{content:"";position:absolute;top:-6px;left:24px;right:24px;height:6px;background:#4c4c4c;border-radius:4px 4px 0 0;}
   .cart .lbl{height:64px;border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;}
   .cart .lbl .em{font-size:22px;line-height:1;}
   .cart .lbl .nm{font-family:'Press Start 2P',monospace;font-size:6.5px;line-height:1.6;color:rgba(0,0,0,.75);}
-  .cart .ridges{height:8px;margin-top:7px;background:repeating-linear-gradient(90deg,#494163 0 6px,#3a3450 6px 12px);border-radius:2px;}
+  .cart .ridges{height:8px;margin-top:7px;background:repeating-linear-gradient(90deg,#4c4c4c 0 6px,#3a3a3a 6px 12px);border-radius:2px;}
   .cart .under{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--dim);margin-top:8px;line-height:1.7;}
-  .cart.inslot .shell{border-color:var(--gold);box-shadow:0 0 14px rgba(255,207,92,.35);}
+  .cart.inslot .shell{border-color:var(--gold);box-shadow:0 0 14px rgba(255,255,255,.3);}
   .cart.inslot .under{color:var(--gold);}
 
   #sysrow{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 0;max-width:840px;}
@@ -93,30 +125,83 @@
   .ovbody{font-size:14px;line-height:1.6;color:#ddd5ea;}
   .statrow{display:flex;align-items:center;gap:10px;margin:9px 0;}
   .statrow .sn{font-family:'Press Start 2P',monospace;font-size:8px;width:150px;color:var(--ink);line-height:1.5;}
-  .statrow .sb{flex:1;height:12px;background:#241f35;border:1px solid var(--edge);}
+  .statrow .sb{flex:1;height:12px;background:#1e1e1e;border:1px solid var(--edge);}
   .statrow .sf{height:100%;background:var(--gold);}
   .statrow .sv{font-family:'Press Start 2P',monospace;font-size:8px;color:var(--dim);width:34px;text-align:right;}
   .saveslot{border:2px solid var(--edge);border-radius:8px;padding:10px 12px;margin:10px 0;}
   .saveslot .st{font-family:'Press Start 2P',monospace;font-size:9px;color:var(--gold);line-height:1.8;}
   .saveslot .sd{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--dim);margin-top:4px;line-height:1.9;}
   .saveslot ul{margin:8px 0 2px 18px;font-size:13px;color:#ddd5ea;}
-  .ovclose{font-family:'Press Start 2P',monospace;font-size:8px;color:#0e0c16;background:var(--gold);
+  .ovclose{font-family:'Press Start 2P',monospace;font-size:8px;color:#0a0a0a;background:var(--gold);
     border:0;padding:9px 14px;cursor:pointer;margin-top:12px;border-radius:4px;}
-  #tvoverlay a{color:#8fc7ff;}
+  #tvoverlay a{color:#ffffff;}
+
+  /* bezel controls: fullscreen + sound */
+  #tvctl{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);display:flex;gap:8px;}
+  #tvctl button{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--dim);background:transparent;
+    border:1px solid var(--edge);border-radius:4px;padding:5px 8px;cursor:pointer;line-height:1;white-space:nowrap;}
+  #tvctl button:hover{color:var(--gold);border-color:var(--gold);}
+  @media (max-width:560px){ #brand{display:none;} }
+  @media (pointer:coarse){ #tvwrap{padding-bottom:42px;} #tvctl{bottom:7px;} #tvctl button{font-size:8px;padding:8px 11px;} }
+
+  /* fullscreen play mode */
+  body.fsmode{overflow:hidden;}
+  #tvwrap.fs{position:fixed;inset:0;z-index:70;max-width:none;margin:0;border:0;border-radius:0;padding:0;
+    background:#000;display:flex;align-items:center;justify-content:center;}
+  #tvwrap.fs #tvinner{width:min(100vw, calc(100vh * 16 / 9));width:min(100vw, calc(100dvh * 16 / 9));border-radius:0;}
+  #tvwrap.fs #scan, #tvwrap.fs #glow{border-radius:0;}
+  #tvwrap.fs #led, #tvwrap.fs #brand, #tvwrap.fs #tvctl{display:none;}
+  #fsExit{display:none;position:fixed;top:10px;right:10px;z-index:80;font-family:'Press Start 2P',monospace;font-size:9px;
+    color:var(--ink);background:rgba(20,20,20,.85);border:1px solid var(--edge);border-radius:6px;padding:10px 12px;cursor:pointer;}
+  #tvwrap.fs #fsExit{display:block;}
+  #rotHint{display:none;position:fixed;left:0;right:0;bottom:18px;z-index:80;text-align:center;
+    font-family:'Press Start 2P',monospace;font-size:8px;color:var(--dim);line-height:1.8;padding:0 16px;}
+  @media (orientation:portrait) and (pointer:coarse){ #tvwrap.fs #rotHint{display:block;} }
+
+  /* real-game trailer in the info card */
+  .icols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start;margin-top:8px;}
+  #infocard.nomedia .icols{grid-template-columns:1fr;}
+  #infocard.nomedia .imedia{display:none;}
+  @media (max-width:640px){ .icols{grid-template-columns:1fr;} }
+  .trailer{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:2px solid var(--edge);border-radius:8px;
+    overflow:hidden;cursor:pointer;background:#000 center/cover no-repeat;}
+  .trailer .play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+    background:rgba(0,0,0,.38);font-family:'Press Start 2P',monospace;font-size:8px;color:#fff;letter-spacing:.5px;}
+  .trailer .play b{width:46px;height:46px;border-radius:50%;border:2px solid #fff;background:rgba(0,0,0,.55);
+    display:flex;align-items:center;justify-content:center;font-size:16px;padding-left:3px;}
+  button.trailer:hover{border-color:var(--gold);}
+  div.trailer{cursor:default;}
+  .trailer:hover .play b{border-color:var(--gold);color:var(--gold);}
+  .trailer iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .icap{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--dim);margin-top:7px;line-height:1.7;}
+
+  /* played marks + progress */
+  .cart.played .shell::after{content:"\2713";position:absolute;top:-9px;right:-8px;width:18px;height:18px;border-radius:50%;
+    background:var(--gold);color:#0a0a0a;font:bold 11px/18px 'Segoe UI',system-ui,sans-serif;text-align:center;}
+  #progress{display:block;margin:12px auto 0;background:none;border:0;font-family:'Press Start 2P',monospace;font-size:8px;
+    color:var(--dim);line-height:1.9;text-align:center;cursor:default;}
+  #progress.done{color:var(--gold);cursor:pointer;}
+  #progress.done:hover{text-decoration:underline;}
+
+  /* overlay action buttons */
+  .ovbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  #tvoverlay a.ovbtn{font-family:'Press Start 2P',monospace;font-size:8px;color:var(--ink);text-decoration:none;
+    border:2px solid var(--edge);border-radius:6px;padding:9px 12px;line-height:1;}
+  #tvoverlay a.ovbtn:hover{color:var(--gold);border-color:var(--gold);}
 </style>
 </head>
 <body>
 
 <div id="boot">
   <div class="blogo">DANYAL&nbsp;64</div>
-  <div class="bsub">DANYAL COMPUTER ENTERTAINMENT<br>SENIOR GAME ENGINEER SYSTEM · EST. 2016</div>
+  <div class="bsub">A PLAYABLE PORTFOLIO<br>BY DANYAL ASGHAR · PRESS START</div>
   <div class="bskip">CLICK TO SKIP</div>
 </div>
 
 <div id="room">
   <header>
-    <h1>DANYAL ASGHAR</h1>
-    <p>SENIOR GAME ENGINEER · UNITY SPECIALIST · 10+ YEARS<br>PC · PS4 · PS5 · XBOX ONE · SWITCH</p>
+    <h1>A LEAF, A LIFE, A GAME</h1>
+    <p>I'M DANYAL — I BELIEVE SMALL THINGS CAN HOLD WHOLE WORLDS.<br>THIS LITTLE SITE HOLDS FIVE OF MINE. PICK A CARTRIDGE AND PLAY.</p>
   </header>
 
   <div id="tvwrap">
@@ -126,61 +211,71 @@
       <div id="tvoverlay"></div>
     </div>
     <div id="led"></div><div id="brand">DANYAL-64 · CRT-9000</div>
+    <div id="tvctl">
+      <button type="button" id="fsBtn" title="Play fullscreen">FULLSCREEN</button>
+      <button type="button" id="muteBtn" title="Toggle sound (M)" aria-pressed="false">SOUND: ON</button>
+    </div>
+    <button type="button" id="fsExit">✕ EXIT</button>
+    <div id="rotHint">↻ ROTATE YOUR PHONE FOR A BIGGER SCREEN</div>
   </div>
 
   <div id="infocard">
     <div class="ihead"><span class="ititle" id="ititle"></span><span id="ibadges"></span></div>
     <div class="irole" id="irole"></div>
-    <div class="ibody" id="ibody"></div>
+    <div class="icols"><div class="imedia" id="imedia"></div><div class="ibody" id="ibody"></div></div>
   </div>
 
   <div id="shelfwrap">
-    <div id="shelflabel">▼ SHIPPED TITLES — CLICK A CARTRIDGE TO INSERT ▼</div>
+    <div id="shelflabel">▼ FOUR GAMES I SHIPPED, ONE I'M MAKING NOW — CLICK ONE TO PLAY ▼</div>
     <div id="shelf"></div>
+    <button type="button" id="progress"></button>
   </div>
 
   <div id="sysrow">
+    <button id="btnProfile">🕹 OFF THE RECORD</button>
     <button id="btnStats">⭐ CHARACTER STATS</button>
     <button id="btnMemory">💾 MEMORY CARD</button>
+    <button id="btnHood">⚙ UNDER THE HOOD</button>
     <button id="btnContact">📡 CONTACT LINK</button>
   </div>
 
   <footer>
-    HANDCRAFTED IN VANILLA JS — NO ENGINE, NO FRAMEWORKS<br>
-    <a href="mailto:asghardaniel@gmail.com">ASGHARDANIEL@GMAIL.COM</a> · OPEN TO REMOTE ROLES WORLDWIDE<br>
-    <span style="color:#3e3858;">© 2026 DANYAL ASGHAR — ALL RIGHTS RESERVED</span>
+    HANDCRAFTED IN VANILLA JS — NO ENGINE, NO FRAMEWORKS · <a href="https://github.com/Danyal-sys/Danyal-sys.github.io" target="_blank" rel="noopener">VIEW SOURCE</a><br>
+    <a href="mailto:asghardaniel@gmail.com">ASGHARDANIEL@GMAIL.COM</a> · <a href="https://www.linkedin.com/in/danyal-asghar-a6789a8b" target="_blank" rel="noopener">LINKEDIN</a> · <a href="Danyal-Asghar-CV.pdf" download>DOWNLOAD CV (PDF)</a><br>
+    OPEN TO REMOTE ROLES WORLDWIDE<br>
+    <span style="color:#444;">© 2026 DANYAL ASGHAR — ALL RIGHTS RESERVED</span>
   </footer>
 </div>
 
 <script>
 'use strict';
 // ================= content =================
-const BADGE_COLORS = {'PC':'#8fc7ff','PS4':'#7d9bff','PS5':'#7d9bff','SWITCH':'#ff7d7d',
-  'MULTIPLAYER':'#ffcf5c','DLC':'#e0a4ff','WIP':'#ffcf5c','CONSOLES':'#7d9bff','MOBILE':'#8fe3b0'};
+const BADGE_COLORS = {'PC':'#b8b8b8','PS4':'#b8b8b8','PS5':'#b8b8b8','SWITCH':'#b8b8b8',
+  'MULTIPLAYER':'#c8c8c8','DLC':'#c8c8c8','WIP':'#c8c8c8','CONSOLES':'#b8b8b8','MOBILE':'#b8b8b8'};
 
 const GAMES = {
-  willowdale: { title:'LIFE IN WILLOWDALE: FARM ADVENTURES', short:'WILLOWDALE', em:'🌾', color:'#8fce6a',
+  willowdale: { title:'LIFE IN WILLOWDALE: FARM ADVENTURES', short:'WILLOWDALE', em:'🌾', color:'#8fce6a', yt:'2WtnsWV2s38',
     badges:['PC','PS4','PS5','SWITCH'], role:'LEAD GAMEPLAY ENGINEER — FRAG GAMES',
     body:`<ul><li>Led gameplay engineering on a cozy farm-adventure sim shipped to PC, PS4, PS5 and Switch.</li>
-      <li>Designed core gameplay systems, AI behaviours, camera logic and UI flows.</li>
-      <li>Owned console integration, optimization and TRC / lotcheck certification fixes.</li></ul>
+      <li>Designed core gameplay systems, AI behaviors, camera logic and UI flows.</li>
+      <li>Owned console integration, optimization and TRC / Lotcheck certification fixes.</li></ul>
       <a href="https://store.steampowered.com/app/1548910/Life_in_Willowdale_Farm_Adventures/" target="_blank" rel="noopener">View on Steam →</a>`,
-    micro:'HARVEST RUSH', hint:'CLICK / TAP where to walk — collect ripe crops!' },
-  wrestlequest: { title:'WRESTLEQUEST', short:'WRESTLE QUEST', em:'🤼', color:'#f08a8a',
+    micro:'HARVEST RUSH', hint:'Click or tap where to walk. Grab the ripe crops before they wilt!' },
+  wrestlequest: { title:'WRESTLEQUEST', short:'WRESTLEQUEST', em:'🤼', color:'#f08a8a', yt:'Qw_RKYBM-1A',
     badges:['PC','CONSOLES'], role:'KEY CONTRIBUTOR — FRAG GAMES',
     body:`<ul><li>Turn-based wrestling RPG released on PC and consoles.</li>
       <li>Built gameplay systems across the combat and progression loops.</li>
       <li>Debugged platform-specific issues and resolved certification failures.</li></ul>
       <a href="https://store.steampowered.com/app/1867510/WrestleQuest/" target="_blank" rel="noopener">View on Steam →</a>`,
-    micro:'TITLE MATCH', hint:'Land slams, dodge his attacks, build momentum — then drop the elbow!' },
-  goons: { title:'GOONS: LEGENDS & MAYHEM', short:'GOONS', em:'🏒', color:'#8ab4f0',
+    micro:'TITLE MATCH', hint:'Land slams, dodge his attacks, fill your POWER bar — then drop the elbow!' },
+  goons: { title:'GOONS: LEGENDS & MAYHEM', short:'GOONS', em:'🏒', color:'#8ab4f0', yt:'KTzHlDuZCW8',
     badges:['MULTIPLAYER','PC','CONSOLES'], role:'GAMEPLAY ENGINEER — FRAG GAMES',
     body:`<ul><li>Cross-platform multiplayer arcade sports brawler.</li>
       <li>Production multiplayer experience with Photon / Quantum networking.</li>
       <li>Cross-platform gameplay, input and performance work on PC and consoles.</li></ul>
       <a href="https://store.steampowered.com/app/1484180/Goons_Legends__Mayhem/" target="_blank" rel="noopener">View on Steam →</a>`,
-    micro:'MAYHEM MATCH', hint:'Skate with mouse or finger. Tap: shoot at the net — or dash to BODY CHECK and steal the puck!' },
-  obelisk: { title:'ACROSS THE OBELISK', short:'ACROSS THE OBELISK', em:'🃏', color:'#c39af0',
+    micro:'MAYHEM MATCH', hint:'Skate with mouse or finger. Tap to shoot with the puck, or tap to BODY CHECK without it!' },
+  obelisk: { title:'ACROSS THE OBELISK', short:'ACROSS THE OBELISK', em:'🃏', color:'#c39af0', yt:'TMs_MVs511w',
     badges:['PC','DLC','MULTIPLAYER'], role:'DLC / CONTENT ENGINEER — FRAG GAMES',
     body:`<ul><li>Turn-based deckbuilding RPG with co-op multiplayer.</li>
       <li>Developed DLC content: new enemies, zones, hero cards and bosses.</li>
@@ -193,7 +288,7 @@ const GAMES = {
       <li>Leading the project: technical direction, team leadership and delivery ownership.</li>
       <li>Building core tactical gameplay systems and tooling.</li></ul>`,
     micro:'TACTICS SKIRMISH',
-    hint:'Command 2 heroes! Tap a unit, move on blue tiles, tap an enemy to attack. Rocks give cover!' },
+    hint:'Select a hero, move on the blue tiles, then pick an enemy to attack. Rocks give cover!' },
 };
 const ORDER = ['willowdale','wrestlequest','goons','obelisk','dastaan'];
 
@@ -208,6 +303,16 @@ const cvs = $('screen'), ctx = cvs.getContext('2d');
 ctx.imageSmoothingEnabled = false;
 const W = 320, H = 180;
 const overlay = $('tvoverlay');
+const CV_URL = 'Danyal-Asghar-CV.pdf';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/danyal-asghar-a6789a8b';
+
+// saved progress (survives reloads; works without storage too)
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} },
+};
+const played = new Set(store.get('d64.played', []).filter(k => ORDER.includes(k)));
+let endingSeen = store.get('d64.ending', false);
 
 // shelf
 ORDER.forEach(key => {
@@ -222,9 +327,29 @@ ORDER.forEach(key => {
   $('shelf').appendChild(b);
 });
 
+function markPlayed(key){
+  if(played.has(key)) return;
+  played.add(key); store.set('d64.played', [...played]);
+  renderProgress();
+}
+function renderProgress(){
+  ORDER.forEach(k => {
+    const c = $('cart-'+k);
+    c.classList.toggle('played', played.has(k));
+    c.querySelector('.under').textContent = c.classList.contains('inslot') ? '▶ IN SLOT' : (played.has(k) ? 'PLAYED' : 'INSERT');
+  });
+  const p = $('progress'), done = played.size === ORDER.length;
+  p.classList.toggle('done', done);
+  p.textContent = done ? '★ 5 / 5 PLAYED — SEE THE ENDING ★'
+                       : played.size + ' / 5 PLAYED · PLAY ALL FIVE TO UNLOCK THE ENDING';
+}
+renderProgress();
+
 // ================= audio =================
 let AC = null;
+let muted = store.get('d64.muted', false);
 function tone(f0, f1, dur, type, vol){
+  if(muted) return;
   try{
     AC = AC || new (window.AudioContext||window.webkitAudioContext)();
     if(AC.state==='suspended') AC.resume();
@@ -298,8 +423,7 @@ function insert(key){
   cur = key;
   document.querySelectorAll('.cart').forEach(c=>c.classList.remove('inslot'));
   $('cart-'+key).classList.add('inslot');
-  document.querySelectorAll('.cart .under').forEach(u=>u.textContent='INSERT');
-  $('cart-'+key).querySelector('.under').textContent = '▶ IN SLOT';
+  renderProgress();
   // info card
   const g = GAMES[key];
   $('ititle').textContent = g.title;
@@ -308,23 +432,45 @@ function insert(key){
   const bd = $('ibadges'); bd.innerHTML = '';
   g.badges.forEach(b=>{ const s=document.createElement('span'); s.className='badge';
     const c=BADGE_COLORS[b]||'#8fc7ff'; s.style.color=c; s.style.borderColor=c; s.textContent=b; bd.appendChild(s); });
+  renderMedia(g);
   $('infocard').style.display = 'block';
   flicker = 14;
   game = null;
   state = 'title';
   $('tvwrap').scrollIntoView({behavior:'smooth', block:'nearest'});
 }
+// real-game trailer: a thumbnail first, the YouTube player only once clicked
+function renderMedia(g){
+  const m = $('imedia');
+  $('infocard').classList.toggle('nomedia', !g.yt);
+  if(!g.yt){ m.innerHTML = ''; return; }
+  m.innerHTML = `<button type="button" class="trailer" style="background-image:url(https://i.ytimg.com/vi/${g.yt}/hqdefault.jpg)"
+      aria-label="Play the official trailer for ${g.title}"><span class="play"><b>▶</b>WATCH THE REAL GAME</span></button>
+    <div class="icap">OFFICIAL TRAILER — THE GAME THIS CARTRIDGE IS BASED ON</div>`;
+  m.querySelector('.trailer').addEventListener('click', e => {
+    const box = document.createElement('div');
+    box.className = 'trailer';
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${g.yt}?autoplay=1&rel=0" title="${g.title} — official trailer"
+      allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+    e.currentTarget.replaceWith(box);
+  }, {once:true});
+}
 function startGame(){
   if(!cur) return;
   sfx.start();
   game = MICRO[cur].create();
   state = 'play';
+  markPlayed(cur);
 }
 function endGame(msg, sub, won){
   game = game || {};
   game.overMsg = msg; game.overSub = sub;
   state = 'over';
   (won ? sfx.win : sfx.lose)();
+  // first time all five have been played: show the ending once this result has sunk in
+  if(played.size === ORDER.length && !endingSeen){
+    setTimeout(()=>{ if(state==='over' && !endingSeen) showEnding(); }, 2400);
+  }
 }
 
 // ================= microgames =================
@@ -466,7 +612,7 @@ MICRO.wrestlequest = { create(){
     hurtSelf(dmg){
       this.php=Math.max(0,this.php-dmg); this.shake=Math.min(9,3+dmg*.3); sfx.bad();
       if(this.php<=0){ this.phase='end'; this.log='THE LIGHTS GO OUT...';
-        setTimeout(()=>endGame('YOU GOT PINNED...','PRESS R FOR A REMATCH',false),1400); }
+        setTimeout(()=>endGame('YOU GOT PINNED...','THE MAULER KEEPS HIS BELT',false),1400); }
     },
     foeTurn(delay){
       if(this.phase==='end') return;
@@ -609,13 +755,13 @@ MICRO.wrestlequest = { create(){
       px8(g,'YOU',10,3,'#8fe3b0','left');
       g.fillStyle='#241f35'; g.fillRect(42,3,96,8);
       g.fillStyle='#8fe3b0'; g.fillRect(43,4,94*this.php/100,6);
-      px8(g,'MOM',10,14,'#ffcf5c','left');
+      px8(g,'PWR',10,14,'#ffcf5c','left');
       g.fillStyle='#241f35'; g.fillRect(42,15,96,6);
       g.fillStyle='#ffcf5c'; g.fillRect(43,16,94*this.mom/100,4);
       px8(g,'MAULER',W-10,3,this.enraged?'#ff5c5c':'#f08a8a','right');
-      g.fillStyle='#241f35'; g.fillRect(W-138,3,96,8);
+      g.fillStyle='#241f35'; g.fillRect(W-160,3,96,8);
       g.fillStyle=this.enraged?'#ff5c5c':'#f08a8a';
-      g.fillRect(W-137+94*(1-this.fhp/100),4,94*this.fhp/100,6);
+      g.fillRect(W-159+94*(1-this.fhp/100),4,94*this.fhp/100,6);
       if(this.enraged&&this.koT===0) px8(g,'RAGE',W-10,14,'#ff5c5c','right');
       if(this.phase==='meter'||this.phase==='dodge'){
         const zone=this.phase==='dodge'?.22:.18, zc=this.phase==='dodge'?'#8fe3b0':'#ffd25c';
@@ -708,7 +854,7 @@ MICRO.goons = { create(){
       this.time-=dt;
       if(this.time<=0){
         const d=this.ps-this.as;
-        endGame(d>0?'MAYHEM CHAMPIONS!':(d===0?'SUDDEN DEATH... DRAW!':'BENCHED...'),
+        endGame(d>0?'MAYHEM CHAMPIONS!':(d===0?'A HARD-FOUGHT DRAW!':'BENCHED...'),
           'FINAL SCORE '+this.ps+' - '+this.as, d>0); return; }
       this.pops.forEach(o=>o.t+=dt); this.pops=this.pops.filter(o=>o.t<1);
       this.trail.forEach(o=>o.t+=dt); this.trail=this.trail.filter(o=>o.t<.5);
@@ -959,7 +1105,7 @@ MICRO.obelisk = { create(){
         this.pop(50,116, dmg>0?'-'+dmg:'BLOCKED!', dmg>0?'#f08a8a':'#8ab4f0');
         this.log= ab? ('BOSS HITS '+raw+' — YOU BLOCK '+ab) : ('BOSS HITS YOU FOR '+raw+'!');
         if(this.php<=0){ this.log='YOU FALL...';
-          setTimeout(()=>endGame('YOU FELL...','THE OBELISK CLAIMS ANOTHER — PRESS R',false),1100); return; }
+          setTimeout(()=>endGame('YOU FELL...','THE OBELISK CLAIMS ANOTHER HERO',false),1100); return; }
         setTimeout(()=>{
           if(state!=='play') return;
           this.turn++;
@@ -1006,7 +1152,7 @@ MICRO.obelisk = { create(){
       px8(g,'BOSS',96,68,'#f08a8a','right');
       g.fillStyle='#241f35'; g.fillRect(102,66,116,9); g.strokeStyle='#efe6d0'; g.strokeRect(102.5,66.5,115,8);
       g.fillStyle=this.enraged?'#ff5c5c':'#f08a8a'; g.fillRect(104,68,112*this.fhp/BOSSHP,5);
-      if(this.pois>0){ px8(g,'PSN '+this.pois,224,68,'#97c459','left'); }
+      if(this.pois>0){ px8(g,'POISON '+this.pois,224,68,'#97c459','left'); }
       // intent — plain words
       const pulse=Math.floor(tvT/400)%2;
       px8(g,'WILL HIT YOU FOR '+this.intent,W/2,80,pulse?'#f0a133':'#ffcf5c');
@@ -1169,7 +1315,7 @@ MICRO.dastaan = { create(){
       }
       if(!this.heroes.some(h=>h.alive)){
         if(this.phase!=='end'){ this.phase='end';
-          setTimeout(()=>endGame('SQUAD WIPED...','THE TALE ENDS HERE — PRESS R',false),900); }
+          setTimeout(()=>endGame('SQUAD WIPED...','THE TALE ENDS HERE... FOR NOW',false),900); }
         return;
       }
       // player -> enemy transition
@@ -1312,15 +1458,15 @@ MICRO.dastaan = { create(){
 
 // ================= attract / title / over / wip =================
 function drawAttract(g){
-  g.fillStyle='#0a0814'; g.fillRect(0,0,W,H);
+  g.fillStyle='#070707'; g.fillRect(0,0,W,H);
   for(let i=0;i<40;i++){ const x=(i*89)%W, y=(i*53+tvT*.02*(i%3+1))%H;
-    g.fillStyle='rgba(239,230,208,.35)'; g.fillRect(x,y,1.5,1.5); }
+    g.fillStyle='rgba(210,210,210,.32)'; g.fillRect(x,y,1.5,1.5); }
   const bx = W/2 + Math.sin(tvT/900)*70, by = 62 + Math.cos(tvT/700)*22;
   g.font='16px "Press Start 2P", monospace'; g.textAlign='center'; g.textBaseline='top';
-  g.fillStyle='#6e3c17'; g.fillText('DANYAL 64', bx+2, by+2);
-  g.fillStyle='#ffcf5c'; g.fillText('DANYAL 64', bx, by);
-  px8(g,'SENIOR GAME ENGINEER SYSTEM', W/2, 108, '#9c92b8');
-  if(Math.floor(tvT/500)%2) px8(g,'▼ INSERT CARTRIDGE ▼', W/2, 132, '#efe6d0');
+  g.fillStyle='#000'; g.fillText('DANYAL 64', bx+2, by+2);
+  g.fillStyle='#f0f0f0'; g.fillText('DANYAL 64', bx, by);
+  px8(g,'A PORTFOLIO YOU CAN PLAY', W/2, 108, '#8a8a8a');
+  if(Math.floor(tvT/500)%2) px8(g,'▼ INSERT A CARTRIDGE ▼', W/2, 132, '#d8d8d8');
 }
 function drawTitle(g){
   const gm = GAMES[cur];
@@ -1330,7 +1476,7 @@ function drawTitle(g){
   g.font='10px "Press Start 2P", monospace'; g.textAlign='center'; g.textBaseline='top';
   g.fillStyle=gm.color; g.fillText(gm.micro, W/2, 44);
   px8(g, gm.short, W/2, 66, '#9c92b8');
-  if(Math.floor(tvT/450)%2) px8(g,'CLICK / ENTER TO PLAY', W/2, 100, '#ffcf5c');
+  if(Math.floor(tvT/450)%2) px8(g,'CLICK OR TAP TO PLAY', W/2, 100, '#ffcf5c');
   px8wrap(g, gm.hint, 126, '#9c92b8');
 }
 function drawOver(g){
@@ -1338,15 +1484,18 @@ function drawOver(g){
   g.font='10px "Press Start 2P", monospace'; g.textAlign='center'; g.textBaseline='top';
   g.fillStyle='#ffcf5c'; g.fillText(game.overMsg||'GAME OVER', W/2, 54);
   px8(g, game.overSub||'', W/2, 80, '#efe6d0');
-  if(Math.floor(tvT/450)%2) px8(g,'R — PLAY AGAIN', W/2, 112, '#9c92b8');
-  px8(g,'PROJECT INFO BELOW ▼', W/2, 130, '#9c92b8');
+  if(Math.floor(tvT/450)%2) px8(g,'CLICK OR TAP TO PLAY AGAIN', W/2, 112, '#9c92b8');
+  px8(g, GAMES[cur] && GAMES[cur].yt ? 'WATCH THE REAL GAME BELOW ▼' : 'PROJECT INFO BELOW ▼', W/2, 130, '#9c92b8');
 }
 
 // ================= main loop =================
-let last=0;
+let last=0, lastTouch='';
 function loop(t){
   requestAnimationFrame(loop);
   const dt=Math.min(.04,(t-last)/1000); last=t; tvT=t;
+  // while a game runs, finger drags steer the game instead of scrolling the page
+  const ta = state==='play' ? 'none' : 'manipulation';
+  if(ta!==lastTouch){ cvs.style.touchAction = ta; lastTouch = ta; }
   if(state==='play' && game && game.update) game.update(dt);
   if(state!=='play') canvasBtns = [];
   const g=ctx;
@@ -1376,7 +1525,7 @@ cvs.addEventListener('pointermove', e=>{ const p=canvasPos(e); pointer.x=p.x; po
 cvs.addEventListener('pointerdown', e=>{
   const p=canvasPos(e); pointer.x=p.x; pointer.y=p.y; pointer.down=true; pointer.active=true;
   if(state==='title'){ startGame(); return; }
-  if(state==='over'){ if(cur){ game=null; state='title'; } return; }
+  if(state==='over'){ if(cur) startGame(); return; }
   if(state==='play' && game){
     if(game.onCanvasDown) game.onCanvasDown(); else hitBtn();
   }
@@ -1390,10 +1539,11 @@ window.addEventListener('keydown', e=>{
   keys[k]=true;
   if(k==='enter'||k===' '){
     if(state==='title'){ startGame(); return; }
-    if(state==='over'){ game=null; state='title'; return; }
+    if(state==='over'){ if(cur) startGame(); return; }
   }
   if(k==='r' && (state==='over'||state==='play') && cur){ startGame(); return; }
-  if(k==='escape'){ hideOverlay(); }
+  if(k==='m' && !e.ctrlKey && !e.metaKey && !e.altKey){ toggleMute(); return; }
+  if(k==='escape'){ if(overlay.style.display==='block') hideOverlay(); else if($('tvwrap').classList.contains('fs')) exitFS(); }
   if(state==='play' && game && game.onKey) game.onKey(k);
 });
 window.addEventListener('keyup', e=>{ keys[e.key.toLowerCase()]=false; });
@@ -1405,7 +1555,9 @@ $('btnStats').addEventListener('click', ()=>{
   let rows = STATS.map(s=>`<div class="statrow"><span class="sn">${s[0]}</span>
     <span class="sb"><span class="sf" style="width:${s[1]}%"></span></span>
     <span class="sv">${s[1]}</span></div>`).join('');
-  showOverlay(`<div class="ovtitle">CHARACTER STATS — LV.10 ENGINEER</div>${rows}
+  showOverlay(`<div class="ovtitle">CHARACTER STATS — LV.10 ENGINEER</div>
+    <div class="ovbody" style="margin:0 0 12px;font-size:13px;color:#b8aed4;">
+    Senior Game Engineer · Unity specialist · 10+ years shipping on PC, PS4, PS5, Xbox One &amp; Switch.</div>${rows}
     <div class="ovbody" style="margin-top:10px;font-size:13px;">
     Tools: Git · Perforce · Jira · Agile/Scrum &nbsp;|&nbsp; Cert: TRC / XR / Lotcheck</div>
     <button class="ovclose" onclick="this.parentElement.style.display='none'">CLOSE (ESC)</button>`);
@@ -1414,26 +1566,106 @@ $('btnMemory').addEventListener('click', ()=>{
   showOverlay(`<div class="ovtitle">MEMORY CARD — CAREER SAVE DATA</div>
     <div class="saveslot"><div class="st">SLOT 1 · FRAG GAMES ★ ACTIVE SAVE</div>
       <div class="sd">SENIOR ENGINEER / PARTNER / TEAM LEAD · NOV 2020 — NOW · REMOTE</div>
-      <ul><li>Partner: technical leadership, project direction, delivery ownership</li>
-      <li>Led and mentored an engineering team across 4 shipped titles</li>
-      <li>Console integrations, optimization and certification for PS/Xbox/Switch</li></ul></div>
+      <ul><li>Partner: technical leadership, project direction and delivery ownership</li>
+      <li>Led and mentored a team of engineers: code quality, performance and on-time delivery</li>
+      <li>Shipped 4 titles across PC, PlayStation, Xbox and Switch</li>
+      <li>Console integration, optimization and certification fixes (TRC / XR / Lotcheck)</li></ul></div>
     <div class="saveslot"><div class="st">SLOT 2 · METADORT</div>
       <div class="sd">GAME ENGINEER · NOV 2016 — OCT 2020 · LAHORE</div>
-      <ul><li>Shipped multiple Android / iOS Unity games; hyper-casual + prototyping</li>
-      <li>Ran two Google Play accounts: publishing, updates, maintenance</li></ul></div>
+      <ul><li>Shipped multiple Android and iOS games in Unity, from rapid prototypes to hyper-casual releases</li>
+      <li>Ran two Google Play accounts: publishing, updates and maintenance</li></ul></div>
     <div class="saveslot"><div class="st">SLOT 3 · ORIGIN STORY</div>
-      <div class="sd">BSc SOFTWARE ENGINEERING · BEACONHOUSE NATIONAL UNIVERSITY · 2012 — 2016</div></div>
+      <div class="sd">BACHELOR OF SOFTWARE ENGINEERING · BEACONHOUSE NATIONAL UNIVERSITY · 2012 — 2016</div></div>
+    <button class="ovclose" onclick="this.parentElement.style.display='none'">CLOSE (ESC)</button>`);
+});
+$('btnProfile').addEventListener('click', ()=>{
+  showOverlay(`<div style="font-family:'Press Start 2P',monospace;font-size:8px;color:var(--dim);margin-bottom:14px;">// off the record — not the resume part</div>
+    <div style="font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.75;color:#e8e2f2;letter-spacing:.2px;">
+    <p style="margin:0 0 14px;">i've played games since i was five. so many of them. i still remember their lines &mdash; like arthur and dutch arguing over revenge. silksong, rdr2, the last of us... those ones stuck with me.</p>
+    <p style="margin:0 0 14px;">i figured if i love playing games this much, i'd love making them even more. that's honestly the whole reason i do this.</p>
+    <p style="margin:0 0 14px;">away from the screen i like things simple, and people who are simple. i think about strange stuff &mdash; how life even began, why people turn so rude, how a single leaf can be that beautiful.</p>
+    <p style="margin:0 0 14px;">cricket, football, padel. and movies that make me think for days.</p>
+    <p style="margin:0 0 2px;color:#b8aed4;">that's me. thanks for playing.</p>
+    <p style="margin:0;color:var(--gold);font-family:'Press Start 2P',monospace;font-size:11px;">&mdash; danyal</p>
+    </div>
     <button class="ovclose" onclick="this.parentElement.style.display='none'">CLOSE (ESC)</button>`);
 });
 $('btnContact').addEventListener('click', ()=>{
   showOverlay(`<div class="ovtitle">CONTACT LINK ESTABLISHED</div>
     <div class="ovbody">
     <p style="margin:8px 0;">📧 <a href="mailto:asghardaniel@gmail.com">asghardaniel@gmail.com</a></p>
-    <p style="margin:8px 0;">📱 +44 772 7736484 &nbsp;·&nbsp; +92 334 4115715</p>
+    <p style="margin:8px 0;">💼 <a href="${LINKEDIN_URL}" target="_blank" rel="noopener">linkedin.com/in/danyal-asghar</a></p>
+    <p style="margin:8px 0;">📱 <a href="tel:+447727736484">+44 7727 736484</a> &nbsp;·&nbsp; <a href="tel:+923344115715">+92 334 4115715</a></p>
     <p style="margin:8px 0;">🌍 Open to remote roles — worldwide, async-friendly, cross-time-zone proven.</p>
     </div>
+    <div class="ovbtns"><a class="ovbtn" href="mailto:asghardaniel@gmail.com">📧 EMAIL ME</a>
+      <a class="ovbtn" href="${LINKEDIN_URL}" target="_blank" rel="noopener">💼 LINKEDIN</a>
+      <a class="ovbtn" href="${CV_URL}" download>⬇ DOWNLOAD CV (PDF)</a></div>
     <button class="ovclose" onclick="this.parentElement.style.display='none'">CLOSE (ESC)</button>`);
 });
+$('btnHood').addEventListener('click', ()=>{
+  const row = (name, game, what) => `<div class="saveslot"><div class="st">${name}</div>
+    <div class="sd">${game}</div><div style="font-size:13px;line-height:1.55;color:#cfcfcf;margin-top:6px;">${what}</div></div>`;
+  showOverlay(`<div class="ovtitle">UNDER THE HOOD</div>
+    <div class="ovbody" style="margin-bottom:6px;">This whole site is one hand-written HTML file of plain JavaScript &mdash;
+    no engine, no framework, no libraries. The games use no image or sound files: every sprite is drawn in code
+    and every sound effect is synthesized live. Each cartridge exercises a system I build for a living:</div>
+    ${row('HARVEST RUSH','LIFE IN WILLOWDALE','Point-and-click movement, a crop state machine (sprout → ripe → wilted) and a timed spawn system.')}
+    ${row('TITLE MATCH','WRESTLEQUEST','Turn-based combat flow, timing windows with a crit zone, a power meter that unlocks a finisher, and telegraphed enemy attacks you can dodge.')}
+    ${row('MAYHEM MATCH','GOONS: LEGENDS &amp; MAYHEM','Momentum-based skating physics, puck possession and body-check collisions, a CPU opponent that chases, steals and shoots, and goalies that track the puck.')}
+    ${row('CARD DUEL','ACROSS THE OBELISK','A turn loop with telegraphed enemy intent, status effects (block, poison), an enrage phase and clear damage feedback.')}
+    ${row('TACTICS SKIRMISH','DASTAAN','Grid pathfinding (breadth-first search) for move ranges and enemy AI, two action points per unit, and hit chance from range and cover.')}
+    ${row('SHARED CORE','ALL CARTRIDGES','A fixed 320×180 canvas scaled pixel-crisp, one input layer for mouse, touch and keyboard, Web Audio sound, and game feel &mdash; screen shake, flashes, particles and pop-ups.')}
+    <div class="ovbtns"><a class="ovbtn" href="https://github.com/Danyal-sys/Danyal-sys.github.io" target="_blank" rel="noopener">&lt;/&gt; VIEW THE SOURCE</a></div>
+    <button class="ovclose" onclick="this.parentElement.style.display='none'">CLOSE (ESC)</button>`);
+});
+
+// ================= ending (all five cartridges played) =================
+function showEnding(){
+  endingSeen = true; store.set('d64.ending', true);
+  showOverlay(`<div class="ovtitle">★ ALL FIVE CARTRIDGES PLAYED ★</div>
+    <div style="font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.75;color:#e4e4e4;">
+    <p style="margin:0 0 12px;">you played all five. a farm, a wrestling ring, a hockey rink, a dungeon and a battlefield &mdash;
+    that's the work i'm proudest of, and you went through every bit of it. thank you, really.</p>
+    <p style="margin:0 0 12px;">if you're making something and want someone who cares this much about how a game feels,
+    i'd love to hear about it.</p>
+    <p style="margin:0;color:var(--gold);font-family:'Press Start 2P',monospace;font-size:11px;">&mdash; danyal</p></div>
+    <div class="ovbtns"><a class="ovbtn" href="mailto:asghardaniel@gmail.com">📧 EMAIL ME</a>
+      <a class="ovbtn" href="${LINKEDIN_URL}" target="_blank" rel="noopener">💼 LINKEDIN</a>
+      <a class="ovbtn" href="${CV_URL}" download>⬇ DOWNLOAD CV (PDF)</a></div>
+    <button class="ovclose" onclick="this.parentElement.style.display='none'">CLOSE (ESC)</button>`);
+  sfx.win();
+}
+$('progress').addEventListener('click', ()=>{ if(played.size === ORDER.length) showEnding(); });
+
+// ================= fullscreen play =================
+function enterFS(){
+  $('tvwrap').classList.add('fs'); document.body.classList.add('fsmode');
+  const el = document.documentElement, req = el.requestFullscreen || el.webkitRequestFullscreen;
+  try{
+    const p = req && req.call(el);
+    if(p && p.then) p.then(()=>{ try{ const o = screen.orientation; if(o && o.lock) o.lock('landscape').catch(()=>{}); }catch(e){} }).catch(()=>{});
+  }catch(e){}
+  sfx.click();
+}
+function exitFS(){
+  $('tvwrap').classList.remove('fs'); document.body.classList.remove('fsmode');
+  try{ if(document.fullscreenElement || document.webkitFullscreenElement)
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document); }catch(e){}
+  try{ const o = screen.orientation; if(o && o.unlock) o.unlock(); }catch(e){}
+}
+['fullscreenchange','webkitfullscreenchange'].forEach(ev => document.addEventListener(ev, ()=>{
+  if(!document.fullscreenElement && !document.webkitFullscreenElement){
+    $('tvwrap').classList.remove('fs'); document.body.classList.remove('fsmode'); }
+}));
+$('fsBtn').addEventListener('click', enterFS);
+$('fsExit').addEventListener('click', exitFS);
+
+// ================= sound toggle =================
+function renderMute(){ $('muteBtn').textContent = muted ? 'SOUND: OFF' : 'SOUND: ON'; $('muteBtn').setAttribute('aria-pressed', String(muted)); }
+function toggleMute(){ muted = !muted; store.set('d64.muted', muted); renderMute(); sfx.click(); }
+$('muteBtn').addEventListener('click', toggleMute);
+renderMute();
 
 // ================= boot =================
 function dismissBoot(){
