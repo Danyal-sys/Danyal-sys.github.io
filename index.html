@@ -174,6 +174,10 @@
   .trailer:hover .play b{border-color:var(--gold);color:var(--gold);}
   .trailer iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
   .icap{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--dim);margin-top:7px;line-height:1.7;}
+  .keyart{display:block;width:100%;height:auto;border:2px solid var(--edge);border-radius:8px;}
+  #infocard .iabout{margin:0 0 6px;color:#e4e4e4;font-style:italic;}
+  #infocard .icred{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--dim);line-height:1.8;margin-bottom:12px;}
+  #infocard .ipart{font-family:'Press Start 2P',monospace;font-size:7px;color:var(--gold);margin-bottom:2px;}
 
   /* played marks + progress */
   .cart.played .shell::after{content:"\2713";position:absolute;top:-9px;right:-8px;width:18px;height:18px;border-radius:50%;
@@ -256,6 +260,8 @@ const BADGE_COLORS = {'PC':'#b8b8b8','PS4':'#b8b8b8','PS5':'#b8b8b8','SWITCH':'#
 const GAMES = {
   willowdale: { title:'LIFE IN WILLOWDALE: FARM ADVENTURES', short:'WILLOWDALE', em:'🌾', color:'#8fce6a', yt:'2WtnsWV2s38',
     badges:['PC','PS4','PS5','SWITCH'], role:'LEAD GAMEPLAY ENGINEER — FRAG GAMES',
+    about:'A farming adventure: bring the ruined town of Willowdale back to life — grow crops, raise animals and fight through dungeons, solo or in local co-op.',
+    credit:'DEVELOPED BY MINDSCAPE &amp; FRAG GAMES · PUBLISHED BY MINDSCAPE · 2022',
     body:`<ul><li>Led gameplay engineering on a cozy farm-adventure sim shipped to PC, PS4, PS5 and Switch.</li>
       <li>Designed core gameplay systems, AI behaviors, camera logic and UI flows.</li>
       <li>Owned console integration, optimization and TRC / Lotcheck certification fixes.</li></ul>
@@ -263,29 +269,34 @@ const GAMES = {
     micro:'HARVEST RUSH', hint:'Click or tap where to walk. Grab the ripe crops before they wilt!' },
   wrestlequest: { title:'WRESTLEQUEST', short:'WRESTLEQUEST', em:'🤼', color:'#f08a8a', yt:'Qw_RKYBM-1A',
     badges:['PC','CONSOLES'], role:'KEY CONTRIBUTOR — FRAG GAMES',
-    body:`<ul><li>Turn-based wrestling RPG released on PC and consoles.</li>
-      <li>Built gameplay systems across the combat and progression loops.</li>
+    about:'A pixel-art RPG where pro wrestling meets fantasy adventure, with real wrestling legends guiding your hero on the road to glory.',
+    credit:'DEVELOPED BY MEGA CAT STUDIOS · PUBLISHED BY SKYBOUND GAMES · 2023',
+    body:`<ul><li>Built gameplay systems across the combat and progression loops.</li>
       <li>Debugged platform-specific issues and resolved certification failures.</li></ul>
       <a href="https://store.steampowered.com/app/1867510/WrestleQuest/" target="_blank" rel="noopener">View on Steam →</a>`,
     micro:'TITLE MATCH', hint:'Land slams, dodge his attacks, fill your POWER bar — then drop the elbow!' },
   goons: { title:'GOONS: LEGENDS & MAYHEM', short:'GOONS', em:'🏒', color:'#8ab4f0', yt:'KTzHlDuZCW8',
     badges:['MULTIPLAYER','PC','CONSOLES'], role:'GAMEPLAY ENGINEER — FRAG GAMES',
-    body:`<ul><li>Cross-platform multiplayer arcade sports brawler.</li>
-      <li>Production multiplayer experience with Photon / Quantum networking.</li>
+    about:'Arcade hockey meets beat \'em up: brawl through themed levels in couch co-op to save the hockey-crazy kingdom of Rondelia.',
+    credit:'DEVELOPED BY RAGECURE GAMES · PUBLISHED BY BALOR GAMES · 2024',
+    body:`<ul><li>Production multiplayer experience with Photon / Quantum networking.</li>
       <li>Cross-platform gameplay, input and performance work on PC and consoles.</li></ul>
       <a href="https://store.steampowered.com/app/1484180/Goons_Legends__Mayhem/" target="_blank" rel="noopener">View on Steam →</a>`,
     micro:'MAYHEM MATCH', hint:'Skate with mouse or finger. Tap to shoot with the puck, or tap to BODY CHECK without it!' },
   obelisk: { title:'ACROSS THE OBELISK', short:'ACROSS THE OBELISK', em:'🃏', color:'#c39af0', yt:'TMs_MVs511w',
     badges:['PC','DLC','MULTIPLAYER'], role:'DLC / CONTENT ENGINEER — FRAG GAMES',
-    body:`<ul><li>Turn-based deckbuilding RPG with co-op multiplayer.</li>
-      <li>Developed DLC content: new enemies, zones, hero cards and bosses.</li>
+    about:'A co-op roguelite deckbuilder: build powerful decks and take on tactical battles, solo or with up to three friends, to save the kingdom of Senenthia.',
+    credit:'DEVELOPED BY DREAMSITE GAMES · PUBLISHED BY PARADOX INTERACTIVE · 2022',
+    body:`<ul><li>Developed DLC content: new enemies, zones, hero cards and bosses.</li>
       <li>Integrated new gameplay content while maintaining live systems.</li></ul>
       <a href="https://store.steampowered.com/app/1385380/Across_the_Obelisk/" target="_blank" rel="noopener">View on Steam →</a>`,
     micro:'CARD DUEL', hint:'Play 1 card per turn: attack, block or heal. Beat the guardian before it beats you!' },
-  dastaan: { title:'DASTAAN', short:'DASTAAN', em:'⚔️', color:'#c2a071',
+  dastaan: { title:'DASTAAN: KINGDOMS OF SEVEN RIVERS', short:'DASTAAN', em:'⚔️', color:'#c2a071',
+    art:'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2644780/header.jpg',
     badges:['WIP'], role:'PROJECT LEAD — FRAG GAMES',
-    body:`<ul><li>Turn-based tactical game, currently in development at FRAG Games.</li>
-      <li>Leading the project: technical direction, team leadership and delivery ownership.</li>
+    about:'A turn-based tactics game, currently in development.',
+    credit:'IN DEVELOPMENT AT FRAG GAMES',
+    body:`<ul><li>Leading the project: technical direction, team leadership and delivery ownership.</li>
       <li>Building core tactical gameplay systems and tooling.</li></ul>`,
     micro:'TACTICS SKIRMISH',
     hint:'Select a hero, move on the blue tiles, then pick an enemy to attack. Rocks give cover!' },
@@ -428,7 +439,8 @@ function insert(key){
   const g = GAMES[key];
   $('ititle').textContent = g.title;
   $('irole').textContent = g.role;
-  $('ibody').innerHTML = g.body;
+  $('ibody').innerHTML = `<p class="iabout">${g.about}</p><div class="icred">${g.credit}</div>
+    <div class="ipart">MY PART</div>${g.body}`;
   const bd = $('ibadges'); bd.innerHTML = '';
   g.badges.forEach(b=>{ const s=document.createElement('span'); s.className='badge';
     const c=BADGE_COLORS[b]||'#8fc7ff'; s.style.color=c; s.style.borderColor=c; s.textContent=b; bd.appendChild(s); });
@@ -442,8 +454,13 @@ function insert(key){
 // real-game trailer: a thumbnail first, the YouTube player only once clicked
 function renderMedia(g){
   const m = $('imedia');
-  $('infocard').classList.toggle('nomedia', !g.yt);
-  if(!g.yt){ m.innerHTML = ''; return; }
+  $('infocard').classList.toggle('nomedia', !g.yt && !g.art);
+  if(!g.yt){
+    // no trailer yet: show the key art instead
+    m.innerHTML = g.art ? `<img class="keyart" src="${g.art}" alt="${g.title} key art">
+      <div class="icap">KEY ART — CURRENTLY IN DEVELOPMENT</div>` : '';
+    return;
+  }
   m.innerHTML = `<button type="button" class="trailer" style="background-image:url(https://i.ytimg.com/vi/${g.yt}/hqdefault.jpg)"
       aria-label="Play the official trailer for ${g.title}"><span class="play"><b>▶</b>WATCH THE REAL GAME</span></button>
     <div class="icap">OFFICIAL TRAILER — THE GAME THIS CARTRIDGE IS BASED ON</div>`;
